@@ -1,0 +1,104 @@
+
+
+/*
+	header.php
+*/
+html{
+	height: 100%;
+}
+
+body { 
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position:center;
+	margin-top: 5em;
+
+}
+
+.navbar-right{
+	margin-right: 5%;
+}
+.navbar-brand
+{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img
+{
+    max-height: 100%;
+}
+
+
+/*
+	login.php
+*/
+
+.login-form{
+	background-color: #eee;
+}
+
+/*
+	signup.php
+*/
+
+#signup-form{
+	background-color: #eee;
+
+}
+
+/*
+	planner.php
+*/
+
+
+.task{
+	float: left;
+	background-color: #428bca;
+	color: white;
+	border-radius: 10px;
+	padding: 5%;
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.glyphicon{
+	float: right;
+	margin:1%;
+}
+
+
+/*
+	account.php
+*/
+
+#password-form{
+	background-color: #eee;
+}
+
+#delete-account{
+	background-color: #eee;
+}
+
+#colour-picker-form{
+	background-color: #eee;
+	text-align: center;
+
+}
+
+#submit{
+
+	float: left;
+}
+#datepicker-wrapper{
+	padding: 0;
+}
+#datepicker-container{
+  text-align:center;
+
+}
+#datepicker-center{
+  display:inline-block;
+  margin:0 auto;
+}
