@@ -11,7 +11,7 @@ include_once "config.php";
 
     // Create a database object
 try {
-    $conn = new PDO("sqlsrv:server = tcp:timewise1.database.windows.net,1433; Database = Timewise1", "champwise", "Timewsie");
+    $conn = new PDO("sqlsrv:server = tcp:timewise1.database.windows.net,1433; Database = Timewise1", "champwise", "Timewi$e");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
@@ -19,4 +19,3 @@ catch (PDOException $e) {
     die(print_r($e));
 }
 ?>
-Data Source=tcp:timewise1.database.windows.net,1433;Initial Catalog=Timewise1;User Id=champwise@timewise1.database.windows.net;Password=Timewi$e;
