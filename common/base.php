@@ -11,10 +11,12 @@ include_once "config.php";
 
     // Create a database object
 try {
-    $dsn = "mysql:host=".DB_HOST.";dbname=".DB_NAME;
-    $db = new PDO($dsn, DB_USER, DB_PASS);
-} catch (PDOException $e) {
-    echo 'Connection failed: ' . $e->getMessage();
-    exit;
+    $conn = new PDO("sqlsrv:server = tcp:timewise1.database.windows.net,1433; Database = Timewise1", "champwise", "Timewsie");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $e) {
+    print("Error connecting to SQL Server.");
+    die(print_r($e));
 }
 ?>
+Data Source=tcp:timewise1.database.windows.net,1433;Initial Catalog=Timewise1;User Id=champwise@timewise1.database.windows.net;Password=Timewi$e;
