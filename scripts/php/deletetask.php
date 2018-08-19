@@ -1,6 +1,6 @@
 <?php
 
-// get access to database
+// get access to databases
 include_once "../../common/base.php";
 
 // Check for data
