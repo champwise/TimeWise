@@ -9,14 +9,7 @@ session_start();
     // Include site constants
 include_once "config.php";
 
-    // Create a database object
-try {
-    $dsn = "mysql:host=".DB_HOST.";dbname=".DB_NAME;
-    $db = new PDO($dsn, DB_USER, DB_PASS);
-} catch (PDOException $e) {
-    echo 'Connection failed: ' . $e->getMessage();
-    exit;
-}
+
 
     // Create a database object
 try {
