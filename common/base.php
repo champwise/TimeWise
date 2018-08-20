@@ -13,7 +13,7 @@ include_once "config.php";
 
     // Create a database object
 try {
-    $db = new PDO("sqlsrv:server = tcp:timewise1.database.windows.net,1433; Database = Timewise1", "champwise", 'jTel79rv');
+    $db = new PDO("sqlsrv:server = tcp:timewisesvr.database.windows.net,1433; Database = timewisedb", "champwise", 'jTel79rv');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
