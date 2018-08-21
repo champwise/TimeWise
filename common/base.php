@@ -9,8 +9,6 @@ session_start();
     // Include site constants
 include_once "config.php";
 
-
-
     // Create a database object
 try {
     $dsn = "mysql:host=".DB_HOST.";dbname=".DB_NAME;
@@ -19,8 +17,4 @@ try {
     echo 'Connection failed: ' . $e->getMessage();
     exit;
 }
-
-// $con=mysqli_init();
-//  mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL);
-//  mysqli_real_connect($con, "timewise1-server.mysql.database.azure.com", "champwise@timewise1-server", {'jTel79rv'}, {"timewisedb"}, 3306);
 ?>
